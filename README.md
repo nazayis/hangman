@@ -1,4 +1,4 @@
-# hangman
+# Hangman
 
 This is Hangman: The Game!
 
