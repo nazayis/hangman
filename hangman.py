@@ -57,11 +57,11 @@ while round_number < guesses and not show_case == game_word:
                     if given_letter == letter:
                         show_case_list[index] = given_letter
                         game_word_list.remove(given_letter)
-                letter_guess_list.append(given_letter)
                 show_case = "".join(show_case_list)
                 round_number += 1
         else:
             print("You already got this letter! Try another letter.")
+        letter_guess_list.append(given_letter)
     else:
         print("That's not valid. Please enter a LETTER.")
 
@@ -69,20 +69,3 @@ if show_case == game_word:
     print("Congratulations! You won!")
 else:
     print("You lost! Better luck next time.")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
